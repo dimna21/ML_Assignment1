@@ -60,6 +60,15 @@ https://dagshub.com/dimna21/ML_Assignment1/experiments#/experiment/m_c1e8dd3f70c
 ხის მოდელის ექსპერიმენტი:
 https://dagshub.com/dimna21/ML_Assignment1/experiments#/experiment/m_7702289a9828469bad55790437f20e5b
 
+ხის მოდელის დამატებითი ექსპერიმენტები:
+https://dagshub.com/dimna21/ML_Assignment1/experiments#/experiment/m_4928c2059ea041868a3e9104b5f566bc
+https://dagshub.com/dimna21/ML_Assignment1/experiments#/experiment/m_4a2e3e471e764d298aa2d56b7ed4bbaa
+https://dagshub.com/dimna21/ML_Assignment1/experiments#/experiment/m_1438ce557f1c48b386dde2fa394eb6a4
+https://dagshub.com/dimna21/ML_Assignment1/experiments#/experiment/m_f789c6387cc24dbb831585c20df25d60
+https://dagshub.com/dimna21/ML_Assignment1/experiments#/experiment/m_6413332904844893a426662f86283654
+https://dagshub.com/dimna21/ML_Assignment1/experiments#/experiment/m_42c1cc9a778f4f21b76dbf4abccb660a
+(ეს ექსპერიმენტები ჩავატარე, რადგან 0.856/0.81 R^2 შედეგები მაინც შეიძლება პატარა overfit-ად ჩაითვალოს. ამ ექსპერიმენტებში ხელით ვცვლიდი ხის სიღრმისა და ფოთლის გაყოფის რეინჯებს GridSearch-ისთვის და საუკეთესო გაუმჯობესება მინიმალური overfitის გაქრობის მხრივ იყო 0.84/0.81 მე-3 ექსპერიმენტში. ამ მოდელმა ტესტ სეტზე დაახლოებით იგივე შედეგი აჩვენა(0.18787 RMSLE), რაც საწყისმა მოდელმა, ეს კი იმის თქმის საფუძველს იძლევა, რომ მიკროსკოპული overfit პრობლემა არ ყოფილა და რეალურ გარემოში ორივე მოდელი თითქმის ანალოგიურ შედეგზე გადის)
+
 MLFlow-თი ჩაწერილია training ნაწილში მოცემული dictionary-ს პარამეტრების სივრცე თითოეული მოდელისთვის და დალოგილია RMSE, MAE და R^2 მეტრიკები train/test სეტებისთვის.
 
 საუკეთესო ხის მოდელმა Kaggle competition-ის ტესტ სეტზე აჩვენა 0.18204 RMSLE. იმის გათვალისწინებით, რომ leaderboardის თავში ხამები არიან, რომლებიც test set-ზე overfitting-ში ხარჯავენ თავისუფალ დროს და 0.00044 აქვთ ერორი, ამ შედარებით მარტივი არქიტექტურის მოდელებით მიღებული 0.18 ნორმალური შედეგია.
